@@ -16,6 +16,6 @@ func (c *MainController) Get() {
 
 func (c *MainController) Post() {
 	c.Data["Website"] = "beego.zme"
-	c.Data["Email"] = "astaxie@gmxail.com"
+	c.Data["Email"] = "astaxie@gmxxail.com"
 	c.TplName = "index.tpl"
 }

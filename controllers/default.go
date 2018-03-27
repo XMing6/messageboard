@@ -14,8 +14,8 @@ func (c *MainController) Get() {
 	c.TplName = "index.tpl"
 }
 
-func (c *MainController) Post() { 
+func (c *MainController) Post() {
 	c.Data["Website"] = "beego.zme"
-	c.Data["Email"] = "astaxie@gmail.com"
+	c.Data["Email"] = "astaxie@gmxail.com"
 	c.TplName = "index.tpl"
 }

@@ -15,6 +15,6 @@ func (c *MainController) Get() {
 }
 
 func (c *MainController) Post() {
-	c.Data["Website"] = "beego.me" 
+	c.Data["Website"] = "beego.zme"
 	c.TplName = "index.tpl"
 }

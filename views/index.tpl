@@ -15,8 +15,7 @@
           留言板列表
       </div>
       <div  class="card-body">
-    <ul class="list-group" id="msg_list_group">
-    </ul>
+    <ul class="list-group" id="msg_list_group"></ul>
   </div>
   <div class="pagination ml-2" id="pagination"></div>
   </div>
@@ -51,7 +50,42 @@
   </div>
 
 </div>
-  <script src="/static/js/jquery.twbsPagination.js" type="text/javascript"></script>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">回复留言</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+                    <div class="form-group">
+                        <label for="message-text" class="control-label"  id="message-reply-label">Message:</label>
+                        <textarea class="form-control" id="message-reply-text"></textarea>
+                        <input type="hidden" id="message-reply-id" />
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="submit_reply">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal_alert" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="alert alert-warning">
+                <a href="#" class="close" data-dismiss="modal">
+                    &times;
+                </a>
+                <strong>警告！</strong><span>您的网络连接有问题。<span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/jquery.twbsPagination.js" type="text/javascript"></script>
 <script type="text/javascript">
 var message_page_size=5;
 var message_page_count={{.msg_count}};
@@ -85,17 +119,50 @@ $(function(){
                                  $('#msg_list_group').empty();
                                  for(var i in json){
                                     var msg='<li class="media border-bottom p-3"><div class="media-body">';
-                                    msg +='<h5 class="mt-0 mb-1">'+json[i].User_name+' <small> '+json[i].Date_time+' </small></h5>'
+                                    msg +='<div class="d-flex"><h5 class="mt-0 mb-0">'+json[i].User_name+' <small> '+json[i].Date_time+' </small></h5>'
+                                    msg +='<div class="ml-auto"><button type="button" data-id="'+json[i].Msg_id+'"  data-name="'+json[i].User_name+'"  class="btn btn-link mr-1 btn-reply">回复</button>'
+                                    msg +='<button type="button" data-id="'+json[i].Msg_id+'" class="btn btn-link btn-delete">删除</button></div></div>'
                                     msg +=json[i].User_content+"</div></li>";
                                       $('#msg_list_group').append(msg);
                                  }
+                                  $('.btn-reply').click(function(){
+                                         $('#message-reply-label').html('@'+$(this).attr('data-name'));
+                                         $('#message-reply-id').val($(this).attr('data-id'));
+                                         $('#exampleModal').modal('show')
+                                   })
                              }
-                          });
-
-
-
+                    });
                 }
      });
+
+     $('#submit_reply').click(function(){
+        var msg = $('#message-reply-text').val();
+        var id = $('#message-reply-id').val();
+        if(''==msg){
+               $('#modal_alert span').html('回复内容为空！请填写内容！');
+              $('#modal_alert').modal('show');
+              return false;
+        }
+
+        $.ajax({
+           type: "POST",
+           url: "/message/addreply",
+           data: "Msg_id="+id+"&msg_reply="+msg,
+           success: function(msg){
+             alert( "Data Saved: " + msg );
+           }
+        });
+
+
+
+     })
+
+
+
+
+
+
+
 })
 
 </script>

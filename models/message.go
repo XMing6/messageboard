@@ -10,11 +10,12 @@ import (
 // 小写其它package无法引用
 
 type Message struct {
-	User_id int `orm:"pk;auto;column(id)"`
+	Msg_id int `orm:"pk;auto;column(id)"`
 	User_name string `orm:"unique"`
 	User_phone string
 	User_email string
 	User_content string
+	Msg_reply string
 	Create_time time.Time `orm:"auto_now_add;type(datetime)"`
 	Date_time string `orm:"-"` //不用创建表字段
 }
@@ -43,4 +44,19 @@ func  GetMessageCount() int64  {
 	var msg Message
 	count,_ :=o.QueryTable(msg).Count()
 	return count
+}
+
+func  GetMessageById(id int) Message  {
+	 o := orm.NewOrm()
+	 var msg Message
+	 o.QueryTable(msg).Filter("Msg_id",id).One(&msg)
+	 return  msg
+}
+
+func AddMsgReply(msgObj *Message) int64 {
+	o := orm.NewOrm()
+	if num, err := o.Update(msgObj); err == nil {
+		return  num
+	}
+	return  0
 }

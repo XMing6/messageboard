@@ -38,7 +38,15 @@ func (this *MessageController) GetList()  {
 	this.ServeJSON()
 }
 
-func (c *MessageController) pp()  {
 
-	c.Ctx.WriteString("pp Hello world");
+func (this *MessageController) AddReply()  {
+	Msg_id,_ := this.GetInt("Msg_id")
+	msg_reply := this.GetString("msg_reply")
+
+	msgObj := models.GetMessageById(Msg_id)
+	msgObj.Msg_reply = msg_reply
+	flag :=models.AddMsgReply(&msgObj);
+
+	str := fmt.Sprintf("{'ret':%d}",flag)
+	this.Ctx.WriteString(str);
 }

@@ -1,6 +1,9 @@
 package controllers
 
-import "github.com/astaxie/beego"
+import (
+	"github.com/astaxie/beego"
+	"messageboard/models"
+)
 
 type Msg struct {
 	id int `orm:"pk;auto"`
@@ -15,7 +18,9 @@ type IndexControoler struct {
 }
 
 func  (c *IndexControoler) Index()  {
+	msg_count :=models.GetMessageCount()
 	c.Data["PageTitle"]="留言板首页"
+	c.Data["msg_count"] = msg_count
 	c.Layout="layout/layout.tpl"
 	c.TplName="index.tpl"
 }

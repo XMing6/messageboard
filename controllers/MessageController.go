@@ -10,18 +10,11 @@ type MessageController struct {
 	beego.Controller
 }
 
-type xxx struct {
-	id int
-	name string
-}
 func (this *MessageController) Add()  {
 	user_name :=this.GetString("user_name")
 	user_email :=this.GetString("user_email")
 	user_phone :=this.GetString("user_phone")
 	user_content :=this.GetString("user_message")
-	//
-	//message :=models.Msg{1,user_name,user_phone,user_email,user_content}
-	//
 
 	message := new(models.Message)
 	message.User_content =user_content
@@ -36,8 +29,13 @@ func (this *MessageController) Add()  {
 
 }
 
-func (c *MessageController) Test()  {
-	c.Ctx.WriteString("test Hello world");
+func (this *MessageController) GetList()  {
+	page_size,_ := this.GetInt("page_size")
+	page_current,_ := this.GetInt("page_current")
+	offset := (page_current-1)*page_size
+	msg_list := models.GetMessage(page_size,offset)
+	this.Data["json"] = msg_list
+	this.ServeJSON()
 }
 
 func (c *MessageController) pp()  {

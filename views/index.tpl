@@ -15,30 +15,10 @@
           留言板列表
       </div>
       <div  class="card-body">
-    <ul class="list-group">
-      <li class="media border-bottom p-2 ">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">List-based media object <small>2018-03-13 00:08:25</small></h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-      <li class="media border-bottom p-3">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">List-based media object <small>2018-03-13 00:08:25</small></h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-      <li class="media border-bottom p-3">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">List-based media object <small>2018-03-13 00:08:25</small></h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
+    <ul class="list-group" id="msg_list_group">
     </ul>
   </div>
-  <div  class="card-footer">
-          分页
-      </div>
+  <div class="pagination ml-2" id="pagination"></div>
   </div>
   </div>
   <div class="tab-pane fade" id="leave_message" role="tabpanel" aria-labelledby="leave_message-tab">
@@ -47,31 +27,78 @@
            我要留言
       </div>
       <div  class="card-body  p-5">
-   <form  action="message/add" method="POST">
+   <form  action="message/add" id="form1" method="POST">
      <div class="form-group">
        <label for="inputAddress">您的名字</label>
-       <input type="text" class="form-control" id="inputAddress" name="user_name" placeholder="请输入您的名字">
+       <input type="text" class="form-control" id="inputAddress" name="user_name" placeholder="请输入您的名字" value="小名">
      </div>
      <div class="form-group">
        <label for="inputAddress2">您的Email</label>
-       <input type="text" class="form-control" id="inputAddress2" name="user_email" placeholder="请输入您的Email">
+       <input type="text" class="form-control" id="inputAddress2" name="user_email" placeholder="请输入您的Email" value="kitty@bb.com">
      </div>
      <div class="form-group">
        <label for="inputAddress2">您的电话</label>
-       <input type="text" class="form-control" id="inputAddress2" name="user_phone" placeholder="请输入您的电话">
+       <input type="text" class="form-control" id="inputAddress2" name="user_phone" placeholder="请输入您的电话" value="13888888888">
      </div>
      <div class="form-group">
        <label for="inputAddress2">您的留言</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" name="user_message" rows="3" placeholder="请输入您的留言"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" name="user_message" rows="3" placeholder="请输入您的留言">今天天气真的进学好啊！</textarea>
      </div>
-     <button type="submit" class="btn btn-primary">提交</button>
+     <input type="button" class="btn btn-primary"  value="登录" id="message_new"/>
    </form>
   </div>
 
   </div>
 
 </div>
+  <script src="/static/js/jquery.twbsPagination.js" type="text/javascript"></script>
+<script type="text/javascript">
+var message_page_size=5;
+var message_page_count={{.msg_count}};
+var message_page_total=Math.ceil(message_page_count/message_page_size);
 
+
+$(function(){
+    $('#message_new').click(function(){
+        $.ajax({
+           type: "POST",
+           url: "/message/add",
+           data: $('#form1').serialize(),
+           success: function(msg){
+             alert( "Data Saved: " + msg );
+           }
+        });
+    })
+     var obj = $('#pagination').twbsPagination({
+                totalPages: message_page_total,
+                visiblePages: 10,
+                prev:'上一页',
+                first:'首页',
+                next:'下一页',
+                last:'末页',
+                onPageClick: function (event, page) {
+                   $.ajax({
+                             type: "POST",
+                             url: "/message/getlist",
+                             data: "page_size="+message_page_size+"&page_current="+page,
+                             success: function(json){
+                                 $('#msg_list_group').empty();
+                                 for(var i in json){
+                                    var msg='<li class="media border-bottom p-3"><div class="media-body">';
+                                    msg +='<h5 class="mt-0 mb-1">'+json[i].User_name+' <small> '+json[i].Date_time+' </small></h5>'
+                                    msg +=json[i].User_content+"</div></li>";
+                                      $('#msg_list_group').append(msg);
+                                 }
+                             }
+                          });
+
+
+
+                }
+     });
+})
+
+</script>
 
 
 

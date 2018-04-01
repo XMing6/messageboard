@@ -9,6 +9,7 @@ import (
 // 首字母大写是公有的，首字母小写是私有的
 // 小写其它package无法引用
 
+//声明表字段和
 type Message struct {
 	Msg_id int `orm:"pk;auto;column(id)"`
 	User_name string `orm:"unique"`
@@ -20,13 +21,14 @@ type Message struct {
 	Date_time string `orm:"-"` //不用创建表字段
 }
 
-
+//添加评论
 func AddMessage(message *Message) int64  {
 	o :=orm.NewOrm()
 	id,_ :=o.Insert(message)
 	return id
 }
 
+//获取评论列表
 func  GetMessage(limit int,offset int) []*Message  {
 	o :=orm.NewOrm()
 	var msg Message
@@ -39,6 +41,7 @@ func  GetMessage(limit int,offset int) []*Message  {
 	return msgs
 }
 
+//获取评论总数
 func  GetMessageCount() int64  {
 	o :=orm.NewOrm()
 	var msg Message
@@ -46,6 +49,7 @@ func  GetMessageCount() int64  {
 	return count
 }
 
+//根据评论ID返回评论信息
 func  GetMessageById(id int) Message  {
 	 o := orm.NewOrm()
 	 var msg Message
@@ -53,6 +57,7 @@ func  GetMessageById(id int) Message  {
 	 return  msg
 }
 
+//添加评论回复
 func AddMsgReply(msgObj *Message) int64 {
 	o := orm.NewOrm()
 	if num, err := o.Update(msgObj); err == nil {
@@ -61,6 +66,7 @@ func AddMsgReply(msgObj *Message) int64 {
 	return  0
 }
 
+//根据评论ID删除评论
 func  DelById(msgObj *Message)  int64  {
 	o := orm.NewOrm()
 	if num, err := o.Delete(msgObj); err == nil {

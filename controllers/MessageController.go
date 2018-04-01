@@ -10,6 +10,7 @@ type MessageController struct {
 	beego.Controller
 }
 
+//添加评论
 func (this *MessageController) Add()  {
 	user_name :=this.GetString("user_name")
 	user_email :=this.GetString("user_email")
@@ -28,6 +29,7 @@ func (this *MessageController) Add()  {
 
 }
 
+//ajax 获取评论列表
 func (this *MessageController) GetList()  {
 	page_size,_ := this.GetInt("page_size")
 	page_current,_ := this.GetInt("page_current")
@@ -37,7 +39,7 @@ func (this *MessageController) GetList()  {
 	this.ServeJSON()
 }
 
-
+//添加评论回复
 func (this *MessageController) AddReply()  {
 	Msg_id,_ := this.GetInt("Msg_id")
 	msg_reply := this.GetString("msg_reply")
@@ -52,7 +54,7 @@ func (this *MessageController) AddReply()  {
 
 }
 
-
+//删除评论
 func (this *MessageController) Del()  {
 	Msg_id,_ := this.GetInt("Msg_id")
 	msgObj := models.GetMessageById(Msg_id)

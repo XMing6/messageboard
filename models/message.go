@@ -60,3 +60,12 @@ func AddMsgReply(msgObj *Message) int64 {
 	}
 	return  0
 }
+
+func  DelById(msgObj *Message)  int64  {
+	o := orm.NewOrm()
+	if num, err := o.Delete(msgObj); err == nil {
+		return  num
+	}
+	return  0
+}
+

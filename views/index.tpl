@@ -72,6 +72,7 @@
         </div>
     </div>
 </div>
+
 <div class="modal fade" id="modal_alert" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -84,6 +85,26 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal fade" id="modal_del" tabindex="-1" role="dialog" aria-labelledby="delModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="alert alert-warning">
+                <a href="#" class="close" data-dismiss="modal">
+                    &times;
+                </a>
+                        <input type="hidden" id="message-delete-id" />
+                <strong>警告！</strong><span>你确定要删除吗？<span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="submit_delete">确定删除</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script src="/static/js/jquery.twbsPagination.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -122,13 +143,22 @@ $(function(){
                                     msg +='<div class="d-flex"><h5 class="mt-0 mb-0">'+json[i].User_name+' <small> '+json[i].Date_time+' </small></h5>'
                                     msg +='<div class="ml-auto"><button type="button" data-id="'+json[i].Msg_id+'"  data-name="'+json[i].User_name+'"  class="btn btn-link mr-1 btn-reply">回复</button>'
                                     msg +='<button type="button" data-id="'+json[i].Msg_id+'" class="btn btn-link btn-delete">删除</button></div></div>'
-                                    msg +=json[i].User_content+"</div></li>";
-                                      $('#msg_list_group').append(msg);
+                                    msg +=json[i].User_content;
+                                    if(json[i].Msg_reply!=''){
+                                        msg +="<div class='border border-warning p-2'> 回复： "+json[i].Msg_reply+"</div>";
+                                    }
+                                    msg +="</div></li>";
+                                    $('#msg_list_group').append(msg);
                                  }
                                   $('.btn-reply').click(function(){
                                          $('#message-reply-label').html('@'+$(this).attr('data-name'));
                                          $('#message-reply-id').val($(this).attr('data-id'));
                                          $('#exampleModal').modal('show')
+                                   })
+
+                                  $('.btn-delete').click(function(){
+                                         $('#message-delete-id').val($(this).attr('data-id'));
+                                         $('#modal_del').modal('show')
                                    })
                              }
                     });
@@ -143,26 +173,43 @@ $(function(){
               $('#modal_alert').modal('show');
               return false;
         }
-
         $.ajax({
            type: "POST",
            url: "/message/addreply",
            data: "Msg_id="+id+"&msg_reply="+msg,
+           dataType: "json",
            success: function(msg){
-             alert( "Data Saved: " + msg );
+                if(1==msg.ret){
+                    $('#exampleModal').modal('hide')
+                    window.location.reload()
+                }else{
+                        $('#modal_alert span').html('服务器错误，回复失败！');
+                        $('#modal_alert').modal('show');
+                        return false;
+                }
            }
         });
-
-
-
      })
 
-
-
-
-
-
-
+     $('#submit_delete').click(function(){
+        var id = $('#message-delete-id').val();
+        $.ajax({
+           type: "POST",
+           url: "/message/del",
+           data: "Msg_id="+id,
+           dataType: "json",
+           success: function(msg){
+                if(1==msg.ret){
+                    $('#exampleModal').modal('hide')
+                    window.location.reload()
+                }else{
+                        $('#modal_alert span').html('服务器错误，回复失败！');
+                        $('#modal_alert').modal('show');
+                        return false;
+                }
+           }
+        });
+     })
 })
 
 </script>

@@ -24,7 +24,6 @@ func (this *MessageController) Add()  {
 	insertId := models.AddMessage(message);
 
 	str := fmt.Sprintf("%d",insertId)
-
 	this.Ctx.WriteString("insertId="+str);
 
 }
@@ -47,6 +46,18 @@ func (this *MessageController) AddReply()  {
 	msgObj.Msg_reply = msg_reply
 	flag :=models.AddMsgReply(&msgObj);
 
-	str := fmt.Sprintf("{'ret':%d}",flag)
-	this.Ctx.WriteString(str);
+	result := map[string]int64{"ret":flag}
+	this.Data["json"]=&result
+	this.ServeJSON();
+
+}
+
+
+func (this *MessageController) Del()  {
+	Msg_id,_ := this.GetInt("Msg_id")
+	msgObj := models.GetMessageById(Msg_id)
+	flag :=models.DelById(&msgObj);
+	result := map[string]int64{"ret":flag}
+	this.Data["json"]=&result
+	this.ServeJSON();
 }

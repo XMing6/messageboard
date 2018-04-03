@@ -9,7 +9,7 @@ import (
 // 首字母大写是公有的，首字母小写是私有的
 // 小写其它package无法引用
 
-//声明表字段和
+//声明表字段
 type Message struct {
 	Msg_id int `orm:"pk;auto;column(id)"`
 	User_name string `orm:"unique"`

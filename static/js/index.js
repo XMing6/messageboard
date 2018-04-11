@@ -1,6 +1,10 @@
 $(function(){
     //添加ajax评论
     $('#message_new').click(function(){
+        if(0==message_user_id){
+            $('#modal_login').modal('show')
+            return false;
+        }
         $.ajax({
             type: "POST",
             url: "/message/add",
@@ -10,6 +14,13 @@ $(function(){
             }
         });
     })
+
+    $('#submit_login').click(function(){
+        location.href="/member/login";
+    })
+
+
+
     // ajax 翻页
     var obj = $('#pagination').twbsPagination({
         totalPages: message_page_total,

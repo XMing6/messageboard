@@ -29,15 +29,15 @@
    <form  action="message/add" id="form1" method="POST">
      <div class="form-group">
        <label for="inputAddress">您的名字</label>
-       <input type="text" class="form-control" id="inputAddress" name="user_name" placeholder="请输入您的名字" value="小名">
+       <input type="text" class="form-control" id="inputAddress" name="user_name" placeholder="请输入您的名字" value="{{.mber_info.Name}}">
      </div>
      <div class="form-group">
        <label for="inputAddress2">您的Email</label>
-       <input type="text" class="form-control" id="inputAddress2" name="user_email" placeholder="请输入您的Email" value="kitty@bb.com">
+       <input type="text" class="form-control" id="inputAddress2" name="user_email" placeholder="请输入您的Email" value="{{.mber_info.Email}}">
      </div>
      <div class="form-group">
        <label for="inputAddress2">您的电话</label>
-       <input type="text" class="form-control" id="inputAddress2" name="user_phone" placeholder="请输入您的电话" value="13888888888">
+       <input type="text" class="form-control" id="inputAddrexss2" name="user_phone" placeholder="请输入您的电话" value="">
      </div>
      <div class="form-group">
        <label for="inputAddress2">您的留言</label>
@@ -60,7 +60,7 @@
             </div>
             <div class="modal-body">
                     <div class="form-group">
-                        <label for="message-text" class="control-label"  id="message-reply-label">Message:</label>
+                        <label for="message-reply-text" class="control-label"  id="message-reply-label">Message:</label>
                         <textarea class="form-control" id="message-reply-text"></textarea>
                         <input type="hidden" id="message-reply-id" />
                     </div>
@@ -105,10 +105,28 @@
     </div>
 </div>
 
+  <div class="modal fade" id="modal_login" tabindex="-1" role="dialog" aria-labelledby="delModalLabel">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="alert alert-warning">
+                  <a href="#" class="close" data-dismiss="modal">
+                      &times;
+                  </a>
+                  <strong>警告！您没有登录系统！</strong><span>您需要登录吗？<span>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                  <button type="button" class="btn btn-primary" id="submit_login">确定</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
 
 <script type="text/javascript">
 var message_page_size=5;
 var message_page_count={{.msg_count}};
+var message_user_id={{.mber_info.M_id}};
 var message_page_total=Math.ceil(message_page_count/message_page_size);
 </script>
 <script src="/static/js/jquery.twbsPagination.js" type="text/javascript"></script>

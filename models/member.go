@@ -32,17 +32,20 @@ func  MemberGetById(id int) Member {
 }
 
 //根据邮箱和密码判断用户是否正确
-func MemberLoginByEmailAndPwd( email string,password string) bool  {
+func MemberLoginByEmailAndPwd( email string,password string) ( Member, bool)  {
 	o :=orm.NewOrm()
 	var mber Member
 	err :=o.QueryTable(mber).Filter("Email",email).Filter("password",password).One(&mber)
-	if(err == nil){
-		return false
+	if(err != nil){
+		return mber,false
 	}
 	if mber.Name=="" {
-		return false
+		return mber,false
 	}
-	return  false
+	return  mber,true
+}
 
+func MemberUserIDScreate()  {
+	
 }
 

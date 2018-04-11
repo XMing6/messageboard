@@ -12,6 +12,7 @@ import (
 //声明表字段
 type Message struct {
 	Msg_id int `orm:"pk;auto;column(id)"`
+	User_id int `orm:"index"`
 	User_name string `orm:"unique"`
 	User_phone string
 	User_email string

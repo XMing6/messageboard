@@ -5,6 +5,7 @@ import (
 	"messageboard/models"
 	"crypto/md5"
 	"encoding/hex"
+	"strconv"
 )
 
 type MemberController struct {
@@ -13,6 +14,7 @@ type MemberController struct {
 
 //登陆页面
 func (this *MemberController) Login()  {
+
 	this.Layout="layout/layout.tpl"
 	this.TplName="member/login.tpl"
 }
@@ -28,7 +30,13 @@ func (this *MemberController) AjaxLogin()  {
 	password_md5 := hex.EncodeToString(md5obj.Sum(nil))
 
 	//执行用户校验
-	result := models.MemberLoginByEmailAndPwd(email,password_md5)
+	mber_info,result := models.MemberLoginByEmailAndPwd(email,password_md5)
+
+	//string(int) 不能用于int， 返回"" 值
+
+	//写入登陆cookies
+	this.Ctx.SetCookie("user_name",mber_info.Name);
+	this.SetSecureCookie(beego.AppConfig.String("cookiesecrt"),"user_id",strconv.Itoa(mber_info.M_id));
 
 	//返回json数据
 	jsonMap :=map[string] bool{"ret":result}

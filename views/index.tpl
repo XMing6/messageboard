@@ -43,7 +43,7 @@
        <label for="inputAddress2">您的留言</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" name="user_message" rows="3" placeholder="请输入您的留言">今天天气真的不错啊！</textarea>
      </div>
-     <input type="button" class="btn btn-primary"  value="登录" id="message_new"/>
+     <input type="button" class="btn btn-primary"  value="发表评论" id="message_new"/>
    </form>
   </div>
 
@@ -51,7 +51,7 @@
 
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="modal fade" id="modal_reply" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

@@ -1,10 +1,12 @@
 $(function(){
     //添加ajax评论
     $('#message_new').click(function(){
+        //判断是否登录，后台也需要判断,没有登录就弹窗提示
         if(0==message_user_id){
             $('#modal_login').modal('show')
             return false;
         }
+        //提交评论
         $.ajax({
             type: "POST",
             url: "/message/add",
@@ -15,6 +17,7 @@ $(function(){
         });
     })
 
+    //跳转登录页面
     $('#submit_login').click(function(){
         location.href="/member/login";
     }) ;
@@ -34,6 +37,7 @@ $(function(){
                 data: "page_size="+message_page_size+"&page_current="+page,
                 success: function(json){
                     $('#msg_list_group').empty();
+                    //拼装每个评论与回复
                     for(var i in json){
                         var msg='<li class="media border-bottom p-3"><div class="media-body">';
                         msg +='<div class="d-flex"><h5 class="mt-0 mb-0">'+json[i].User_name+' <small> '+json[i].Date_time+' </small></h5>'
@@ -46,22 +50,29 @@ $(function(){
                         msg +="</div></li>";
                         $('#msg_list_group').append(msg);
                     }
+                    //每条评论的回复按钮事件
                     $('.btn-reply').click(function(){
+                        //判断是否登录，后台也需要判断,没有登录就弹窗提示
                         if(0==message_user_id){
                             $('#modal_login').modal('show');
                             return false;
                         }
+                        //弹窗绑定当前评论信息
                         $('#message-reply-label').html('@'+$(this).attr('data-name'));
                         $('#message-reply-id').val($(this).attr('data-id'));
-                        $('#exampleModal').modal('show')
-                    })
+                        //弹窗输入回复
+                        $('#modal_reply').modal('show')
+                    });
 
+                    //删除按钮事件处理
                     $('.btn-delete').click(function(){
+                        //判断是否登录，后台也需要判断,没有登录就弹窗提示
                         if(0==message_user_id){
                             $('#modal_login').modal('show');
                             return false;
                         }
                         $('#message-delete-id').val($(this).attr('data-id'));
+                        //弹窗确认
                         $('#modal_del').modal('show')
                     })
                 }
@@ -88,7 +99,9 @@ $(function(){
                     $('#exampleModal').modal('hide')
                     window.location.reload()
                 }else{
+                    //错误处理
                     $('#modal_alert span').html('服务器错误，回复失败！');
+                    //弹窗提示
                     $('#modal_alert').modal('show');
                     return false;
                 }
@@ -106,10 +119,12 @@ $(function(){
             dataType: "json",
             success: function(msg){
                 if(1==msg.ret){
-                    $('#exampleModal').modal('hide')
+                    $('#modal_reply').modal('hide')
                     window.location.reload()
                 }else{
+                    //错误处理
                     $('#modal_alert span').html('服务器错误，回复失败！');
+                    //弹窗提示
                     $('#modal_alert').modal('show');
                     return false;
                 }

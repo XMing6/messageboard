@@ -17,9 +17,7 @@ $(function(){
 
     $('#submit_login').click(function(){
         location.href="/member/login";
-    })
-
-
+    }) ;
 
     // ajax 翻页
     var obj = $('#pagination').twbsPagination({
@@ -49,12 +47,20 @@ $(function(){
                         $('#msg_list_group').append(msg);
                     }
                     $('.btn-reply').click(function(){
+                        if(0==message_user_id){
+                            $('#modal_login').modal('show');
+                            return false;
+                        }
                         $('#message-reply-label').html('@'+$(this).attr('data-name'));
                         $('#message-reply-id').val($(this).attr('data-id'));
                         $('#exampleModal').modal('show')
                     })
 
                     $('.btn-delete').click(function(){
+                        if(0==message_user_id){
+                            $('#modal_login').modal('show');
+                            return false;
+                        }
                         $('#message-delete-id').val($(this).attr('data-id'));
                         $('#modal_del').modal('show')
                     })

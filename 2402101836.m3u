@@ -187,14 +187,22 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225742/index.m3u8
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8
 
 
+#EXTINF:-1 group-title="大湾区",广州新闻
+http://php.jdshipin.com:8880/gztv.php?id=xinwen
+#EXTINF:-1 group-title="大湾区",广州综合
+http://php.jdshipin.com:8880/gztv.php?id=zhonghe
+#EXTINF:-1 group-title="大湾区",广东体育
+http://219.137.29.178:4433/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="大湾区",广东珠江
+http://121.33.239.242:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="大湾区",广东珠江
+http://61.141.202.118:9901/tsfile/live/0125_3.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="大湾区",深圳都市「官方」
+http://livepull-tcyzb.sztv.com.cn/live/dushi01.m3u8
 #EXTINF:-1 group-title="大湾区",大湾区卫视
 http://glive.grtn.cn/live/lizhi.m3u8
 #EXTINF:-1 group-title="大湾区",广东文化
 https://glive.grtn.cn/live/wenhua_test0203.m3u8
-#EXTINF:-1 group-title="大湾区",广州综合
-http://php.jdshipin.com:8880/gztv.php?id=zhonghe
-#EXTINF:-1 group-title="大湾区",广州新闻
-http://php.jdshipin.com:8880/gztv.php?id=xinwen
 #EXTINF:-1 group-title="大湾区",广州竞赛
 http://php.jdshipin.com:8880/gztv.php?id=jingsai
 #EXTINF:-1 group-title="大湾区",广州影视
@@ -205,10 +213,6 @@ http://php.jdshipin.com:8880/gztv.php?id=fazhi
 http://php.jdshipin.com:8880/gztv.php?id=shenghuo
 #EXTINF:-1 group-title="大湾区",广东体育2
 http://121.33.239.242:9901/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="大湾区",广东体育
-http://219.137.29.178:4433/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="大湾区",广东珠江
-http://61.141.202.118:9901/tsfile/live/0125_3.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="大湾区",大湾区卫视
 http://php.jdshipin.com:8880/chudian.php?id=nfws
 #EXTINF:-1 group-title="大湾区",广东民生
@@ -231,8 +235,6 @@ http://211.97.63.3:801/hls/82/index.m3u8
 http://211.97.63.3:801/hls/503/index.m3u8
 #EXTINF:-1 group-title="大湾区",番禺电视台
 http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.flv
-#EXTINF:-1 group-title="大湾区",深圳都市「官方」
-http://livepull-tcyzb.sztv.com.cn/live/dushi01.m3u8
 #EXTINF:-1 group-title="大湾区",东莞综合「官方」
 https://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8
 #EXTINF:-1 group-title="大湾区",东莞生活「官方」
@@ -303,8 +305,6 @@ http://php.jdshipin.com:8880/chudian.php?id=wczh
 http://php.jdshipin.com:8880/chudian.php?id=lctv
 #EXTINF:-1 group-title="大湾区",潮安综合
 http://php.jdshipin.com:8880/chudian.php?id=cazh
-#EXTINF:-1 group-title="大湾区",深圳都市
-http://livepull-tcyzb.sztv.com.cn/showto_live/dushi01.m3u8
 
 
 #EXTINF:-1 tvg-id="141" tvg-name="凤凰中文" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzhongwen.png" group-title="港澳台",凤凰卫视中文台

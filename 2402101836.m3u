@@ -1,7 +1,4 @@
-#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
-
-
-
+#EXTM3U x-tvg-url = "https://live.fanmingming.com/e.xml"
 #EXTINF:-1  tvg-logo="https://live.fanmingming.com/tv/广东珠江.png"  group-title="大湾区",广东珠江
 http://121.33.239.242:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1  tvg-logo="https://live.fanmingming.com/tv/广东珠江.png" group-title="大湾区",广东珠江
@@ -12,7 +9,6 @@ http://php.jdshipin.com:8880/gztv.php?id=xinwen
 http://tencentplaygzrb.gztv.com/sec/xinwen.m3u8
 #EXTINF:-1  tvg-logo="https://live.fanmingming.com/tv/广州新闻.png" group-title="大湾区",广州新闻
 https://tv.cry33.com/gztv.php?id=gzxw
-
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/广州综合.png"  group-title="大湾区",广州综合
 http://php.jdshipin.com:8880/gztv.php?id=zhonghe 
 #EXTINF:-1  tvg-logo="https://live.fanmingming.com/tv/广州综合.png" group-title="大湾区",广州综合

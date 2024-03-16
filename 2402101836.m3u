@@ -140,7 +140,7 @@ http://117.27.190.42:9901/tsfile/live/23279_1.m3u8?key=txiptv&playlive=1&authid=
 https://panel.dattalive.com/8146/8146/playlist.m3u8
 
 #EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台"  tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
-http://line.premiumpowers.net/play/live.php?mac=00:1A:79:73:45:10&extension=ts&stream=153505
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=3
 #EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
 http://8.210.207.87/tbs.php?id=r9vuMI4wk1
 #EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
@@ -210,25 +210,7 @@ http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=32
 http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=35
 #EXTINF:-1 group-title="港澳台",非凡新闻台
 http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=38
-
-
-民视,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=20
-中视,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=21
-华视,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=22
-台视,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=23
-TVBS台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=24
-TVBS新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=25
-壹新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=26
-镜新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=27
-民视新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=28
-华视新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=29
-中视新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=30
-台视新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=31
-寰宇新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=32
-中天新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=33
-年代新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=34
-东森新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=35
-三立新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=36
+ 
 
  
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="央视",CCTV-1 综合

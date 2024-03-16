@@ -188,15 +188,15 @@ http://ali.hlspull.yximgs.com/live/twlivefhwzptdzbehztyhbvhfzcvszzfyztvzutvszx.f
 #EXTINF:-1 group-title="港澳台",VIUTV6台
 http://8.210.207.87/tbs.php?id=k2pGdZHDip
 #EXTINF:-1 group-title="港澳台",TVBS
-http://ali.hlspull.yximgs.com/live/twlivezpzovdxzozfdezodszxcvlzzfvhnzlzzzobzzzsvhzchtvbs.flv
+http://38.64.72.148/hls/modn/list/4006/playlist.m3u8
 #EXTINF:-1 group-title="港澳台",TVBS新闻
 http://ali.hlspull.yximgs.com/live/twlivezozwhzxozhzzzlfhzlzszcnxzfvbhzdzwzfzzdsswvtvbsxw.flv
 #EXTINF:-1 group-title="港澳台",三立新闻台
 http://ali.hlspull.yximgs.com/live/twlivehmcyoywzzubzdfzfvchtzuzxczxvcbszfsdxcbmzsllivexw.flv
 #EXTINF:-1 group-title="港澳台",民视新闻
 http://ali.hlspull.yximgs.com/live/twlivecnbvzfhdzuzzvcbnzftuzscxzfzezyhzzvzfmsxw.flv 
-#EXTINF:-1 group-title="港澳台",中视新闻
-http://ali.hlspull.yximgs.com/live/twlivepnvzydstudzbszcvbfzzzszfzszwetymzldhduzocnzsxw.flv 
+#EXTINF:-1 group-title="港澳台",中天新闻
+http://livetv.skycf.eu.org/live.m3u8?c=7
 #EXTINF:-1 group-title="港澳台",台视新闻
 http://ali.hlspull.yximgs.com/live/twlivenczztzzudtzlzcvbcvntzzzsfwetzfvcbcxvdzbzfflvcztsxw.flv 
 #EXTINF:-1 group-title="港澳台",寰宇新闻

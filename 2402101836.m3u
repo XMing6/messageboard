@@ -152,11 +152,11 @@ http://jyjxy.7766.org:8811/hls/36/index.m3u8
 
 
 #EXTINF:-1  tvg-id="VIUTV" tvg-name="VIUTV"  group-title="港澳台",VIUTV
-http://ali.hlspull.yximgs.com/live/twlivefhtzznzzdldzluzobnmzzhnbbmdzlpthzyzvzutv.flv
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=13
 #EXTINF:-1  tvg-id="VIUTV" tvg-name="VIUTV"  group-title="港澳台",VIUTV
 http://8.210.207.87/tbs.php?id=3TdSvtisZh
 #EXTINF:-1  tvg-id="J2" tvg-name="J2"  group-title="港澳台",J2
-http://ali.hlspull.yximgs.com/live/twlivefhwohdpthzyfiplhdftuzfbvdimhdznbzszbcvxzfzsehbvbztvbd2.flv
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=5
 #EXTINF:-1  tvg-id="J2" tvg-name="J2"  group-title="港澳台",J2
 http://8.210.207.87/tbs.php?id=KJQLjeRJlt
 #EXTINF:-1 group-title="港澳台",TVB明珠台
@@ -174,7 +174,7 @@ http://110.72.60.83:808/hls/64/index.m3u8
 #EXTINF:-1 group-title="港澳台",香港34台全网
 https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
-http://ali.hlspull.yximgs.com/live/twlivefhwzpthlzzszszzbvdlzdmnbzhdhyzyztvbwxxw.flv
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=7
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
 http://live.cooltv.top/tv/tvb.php?id=0&hq
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台

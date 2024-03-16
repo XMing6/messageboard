@@ -165,13 +165,15 @@ http://61.144.82.98:808/hls/106/index.m3u8
 http://jyjxy.7766.org:8811/hls/37/index.m3u8
 #EXTINF:-1 group-title="港澳台",TVB星河
 http://180.167.104.105:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="港澳台",TVB星河
+http://113.64.145.228:8081/hls/135/index.m3u8
 
 #EXTINF:-1 group-title="港澳台",星空卫视
 http://yuju666888.x3322.net:808/hls/110/index.m3u8
 #EXTINF:-1 group-title="港澳台",星空卫视
-http://110.72.60.83:808/hls/60/index.m3u8
+http://jyjxy.7766.org:8811/hls/31/index.m3u8
 #EXTINF:-1 group-title="港澳台",ChannelV
-http://110.72.60.83:808/hls/64/index.m3u8
+http://182.150.169.110:5555/udp/239.93.0.157:2194
 
 #EXTINF:-1 group-title="港澳台",香港34台全网
 https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8
@@ -181,32 +183,52 @@ http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=7
 http://live.cooltv.top/tv/tvb.php?id=0&hq
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
 http://8.210.207.87/tbs.php?id=uEEDGxxXlb
+
 #EXTINF:-1 group-title="港澳台",TVB财经体育资1台
 http://ali.hlspull.yximgs.com/live/twlivefhwylwpthzyzzfzxvzlmnduhyzmtvbwxcd.flv
 #EXTINF:-1 group-title="港澳台",TVB财经体育资1台
 http://8.210.207.87/tbs.php?id=teVyyIFEDM
 #EXTINF:-1 group-title="港澳台",VIUTV6台
-http://ali.hlspull.yximgs.com/live/twlivefhwzptdzbehztyhbvhfzcvszzfyztvzutvszx.flv
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=14
 #EXTINF:-1 group-title="港澳台",VIUTV6台
 http://8.210.207.87/tbs.php?id=k2pGdZHDip
 #EXTINF:-1 group-title="港澳台",TVBS
-http://38.64.72.148/hls/modn/list/4006/playlist.m3u8
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=24
 #EXTINF:-1 group-title="港澳台",TVBS新闻
-http://ali.hlspull.yximgs.com/live/twlivezozwhzxozhzzzlfhzlzszcnxzfvbhzdzwzfzzdsswvtvbsxw.flv
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=25
 #EXTINF:-1 group-title="港澳台",三立新闻台
-http://ali.hlspull.yximgs.com/live/twlivehmcyoywzzubzdfzfvchtzuzxczxvcbszfsdxcbmzsllivexw.flv
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=36
 #EXTINF:-1 group-title="港澳台",民视新闻
-http://ali.hlspull.yximgs.com/live/twlivecnbvzfhdzuzzvcbnzftuzscxzfzezyhzzvzfmsxw.flv 
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=28
 #EXTINF:-1 group-title="港澳台",中天新闻
 http://livetv.skycf.eu.org/live.m3u8?c=7
 #EXTINF:-1 group-title="港澳台",台视新闻
-http://ali.hlspull.yximgs.com/live/twlivenczztzzudtzlzcvbcvntzzzsfwetzfvcbcxvdzbzfflvcztsxw.flv 
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=30
 #EXTINF:-1 group-title="港澳台",寰宇新闻
-http://ali.hlspull.yximgs.com/live/twlivephxehmffzuxcxzvezezyhmnzzxzzhzdhnzbnxfdzfhyxw.flv 
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=32
  #EXTINF:-1 group-title="港澳台",东森新闻
-http://ali.hlspull.yximgs.com/live/twlivemhzttuzzcvbyzuozdzzezywefzzfbxfbxxvbzzzlzzhzsxw.flv
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=35
 #EXTINF:-1 group-title="港澳台",非凡新闻台
-http://ali.hlspull.yximgs.com/live/twlivesztnfzzozdcbfcxvzfuuzzwezzzszyuhhdzszhzynffxw.flv
+http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=38
+
+
+民视,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=20
+中视,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=21
+华视,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=22
+台视,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=23
+TVBS台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=24
+TVBS新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=25
+壹新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=26
+镜新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=27
+民视新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=28
+华视新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=29
+中视新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=30
+台视新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=31
+寰宇新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=32
+中天新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=33
+年代新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=34
+东森新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=35
+三立新闻台,http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=36
 
  
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="央视",CCTV-1 综合

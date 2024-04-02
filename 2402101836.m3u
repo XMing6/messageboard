@@ -3,24 +3,30 @@
 http://121.33.239.242:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1  tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png" group-title="大湾区",广东珠江
 http://61.141.202.118:9901/tsfile/live/0125_3.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-id="广州新闻" tvg-name="广州新闻"  tvg-logo="https://live.fanmingming.com/tv/广州新闻.png"  group-title="大湾区",广州新闻
-http://php.jdshipin.com:8880/gztv.php?id=xinwen
-#EXTINF:-1 tvg-id="广州新闻" tvg-name="广州新闻"  tvg-logo="https://live.fanmingming.com/tv/广州新闻.png" group-title="大湾区",广州新闻
-http://tencentplaygzrb.gztv.com/sec/xinwen.m3u8
+#EXTINF:-1  tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png" group-title="大湾区",广东珠江 
+http://113.86.205.10:8090/hls/105/index.m3u8
+
 #EXTINF:-1 tvg-id="广州新闻" tvg-name="广州新闻"  tvg-logo="https://live.fanmingming.com/tv/广州新闻.png" group-title="大湾区",广州新闻
 https://tv.cry33.com/gztv.php?id=gzxw
+#EXTINF:-1 tvg-id="广州新闻" tvg-name="广州新闻"  tvg-logo="https://live.fanmingming.com/tv/广州新闻.png"  group-title="大湾区",广州新闻
+http://cysan.gzcy020.com.cn:50000/rtp/239.253.43.72:5146
+#EXTINF:-1 tvg-id="广州新闻" tvg-name="广州新闻"  tvg-logo="https://live.fanmingming.com/tv/广州新闻.png" group-title="大湾区",广州新闻
+https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=6f73647cae387d01a3c2132074132a83&txTime=18d00acf487
+
 #EXTINF:-1 tvg-logo="https://live.fanmingming.com/tv/广州综合.png"  group-title="大湾区",广州综合
-http://php.jdshipin.com:8880/gztv.php?id=zhonghe 
+https://tv.cry33.com/gztv.php?id=gzzh
 #EXTINF:-1  tvg-logo="https://live.fanmingming.com/tv/广州综合.png" group-title="大湾区",广州综合
 http://tencentplaygzrb.gztv.com/sec/zonghes.m3u8
-#EXTINF:-1 tvg-id="广州影视" tvg-name="广州新闻" group-title="大湾区",广州影视
-http://php.jdshipin.com:8880/gztv.php?id=yingshi
+#EXTINF:-1 tvg-id="广州影视" tvg-name="广州影视" group-title="大湾区",广州影视
+https://tv.cry33.com/gztv.php?id=gzys
 #EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育"  tvg-logo="https://live.fanmingming.com/tv/广东体育.png"  group-title="大湾区",广东体育
 http://www.kitcc.cn:8887/rtp/239.77.0.112:5146
 #EXTINF:-1,tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://epg.112114.xyz/logo/广东体育.png" group-title="大湾区",广东体育
 http://113.100.72.95:8899/udp/239.77.0.112:5146
 #EXTINF:-1,tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://epg.112114.xyz/logo/广东体育.png" group-title="大湾区",广东体育
 http://218.13.170.98:9901/tsfile/live/0019_1.m3u8
+#EXTINF:-1,tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://epg.112114.xyz/logo/广东体育.png" group-title="大湾区",广东体育
+http://ddns.cyruslee.top:8888/udp/239.77.0.112:5146
 
 #EXTINF:-1 group-title="大湾区",深圳都市「官方」
 http://livepull-tcyzb.sztv.com.cn/live/dushi01.m3u8
@@ -29,7 +35,7 @@ http://glive.grtn.cn/live/lizhi.m3u8
 #EXTINF:-1 group-title="大湾区",广东文化
 https://glive.grtn.cn/live/wenhua_test0203.m3u8
 #EXTINF:-1 group-title="大湾区",广州竞赛
-http://php.jdshipin.com:8880/gztv.php?id=jingsai
+https://tv.cry33.com/gztv.php?id=gzjs
 #EXTINF:-1 group-title="大湾区",广州法治
 http://php.jdshipin.com:8880/gztv.php?id=fazhi
 #EXTINF:-1 group-title="大湾区",广州南国都市
@@ -142,9 +148,10 @@ http://113.64.145.91:8081/hls/36/index.m3u8
 
 
 #EXTINF:-1  tvg-id="HOY资讯" tvg-name="HOY资讯"  tvg-logo="https://live.fanmingming.com/tv/HOY资讯.png" group-title="港澳台",HOY资讯
-https://panel.dattalive.com/8146/8146/playlist.m3u8
+http://bziyunshao.synology.me:8891/bysid/78
 
-
+#EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
+http://bziyunshao.synology.me:8889/bysid/1
 #EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
 http://120.238.13.198:8000/hls/21/index.m3u8
 #EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台"  tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
@@ -158,13 +165,13 @@ http://223.71.206.22:30080/HK/tvb/hls.m3u8
 
 
 #EXTINF:-1  tvg-id="VIUTV" tvg-name="VIUTV"  group-title="港澳台",VIUTV
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=13
+http://bziyunshao.synology.me:8889/bysid/99
 #EXTINF:-1  tvg-id="VIUTV" tvg-name="VIUTV"  group-title="港澳台",VIUTV
-http://8.210.207.87/tbs.php?id=3TdSvtisZh
+https://s2.pub/cctv-7
 #EXTINF:-1  tvg-id="J2" tvg-name="J2"  group-title="港澳台",J2
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=5
+hthttp://bziyunshao.synology.me:8890/bysid/82
 #EXTINF:-1  tvg-id="J2" tvg-name="J2"  group-title="港澳台",J2
-http://8.210.207.87/tbs.php?id=KJQLjeRJlt
+http://hksc.vnetidc.hk:61282/bysid/82
 #EXTINF:-1 group-title="港澳台",TVB明珠台
 http://120.238.13.198:8000/hls/19/index.m3u8
 #EXTINF:-1 group-title="港澳台",TVB明珠台
@@ -184,18 +191,18 @@ http://182.150.169.110:5555/udp/239.93.0.157:2194
 #EXTINF:-1 group-title="港澳台",香港34台全网
 https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
-http://120.84.121.94:808/hls/86/index.m3u8
+http://bziyunshao.synology.me:8890/bysid/83
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
 http://live.cooltv.top/tv/tvb.php?id=0&hq
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
 http://8.210.207.87/tbs.php?id=uEEDGxxXlb
 
 #EXTINF:-1 group-title="港澳台",TVB财经体育资1台
-http://ali.hlspull.yximgs.com/live/twlivefhwylwpthzyzzfzxvzlmnduhyzmtvbwxcd.flv
+http://bziyunshao.synology.me:8890/bysid/85
 #EXTINF:-1 group-title="港澳台",TVB财经体育资1台
-http://8.210.207.87/tbs.php?id=teVyyIFEDM
+http://1.65.195.85:9981/stream/channelid/1781676223?profile=pass
 #EXTINF:-1 group-title="港澳台",VIUTV6台
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=14
+http://bziyunshao.synology.me:8889/bysid/96
 #EXTINF:-1 group-title="港澳台",VIUTV6台
 http://8.210.207.87/tbs.php?id=k2pGdZHDip
 
@@ -220,6 +227,8 @@ http://61.158.166.42:1301/haiou.php?key=haiou678&id=ftvnewtaiwan
 http://livetv.skycf.eu.org/live.m3u8?c=7
 #EXTINF:-1,tvg-id="中天新闻台" tvg-name="中天新闻台" tvg-logo="https://epg.112114.xyz/logo/中天新闻台.png" group-title="港澳台",中天新闻
 http://61.158.166.42:1301/haiou.php?key=haiou678&id=ctinews
+#EXTINF:-1,tvg-id="中天新闻台" tvg-name="中天新闻台" tvg-logo="https://epg.112114.xyz/logo/中天新闻台.png" group-title="港澳台",中天新闻
+https://youtube-live.vercel.app/live/youtube/oIgbl7t0S_w?quality=1080
 
 #EXTINF:-1,tvg-id="中视新闻" tvg-name="中视新闻" tvg-logo="https://epg.112114.xyz/logo/中视新闻.png" group-title="港澳台",中视新闻
 http://livetv.skycf.eu.org/live.m3u8?c=6
@@ -233,9 +242,12 @@ http://61.158.166.42:1301/haiou.php?key=haiou678&id=ettvnews
 http://61.158.166.42:1301/haiou.php?key=haiou678&id=feifannewstwn
 #EXTINF:-1,tvg-id="东森财经新闻台" tvg-name="东森财经新闻台" tvg-logo="https://epg.112114.xyz/logo/东森财经新闻台.png" group-title="港澳台",东森财经
 http://livetv.skycf.eu.org/live.m3u8?c=14
+#EXTINF:-1,tvg-id="东森新闻" tvg-name="东森新闻" tvg-logo="https://epg.112114.xyz/logo/东森新闻.png" group-title="港澳台",东森新闻
+ https://youtube-live.vercel.app/live/youtube/2dfAzcDf8Zg?quality=1080
+
 #EXTINF:-1,tvg-id="华视" tvg-name="华视" tvg-logo="https://epg.112114.xyz/logo/华视.png" group-title="港澳台",华视新闻
 http://livetv.skycf.eu.org/live.m3u8?c=13
- 
+
 
  
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="央视",CCTV-1 综合

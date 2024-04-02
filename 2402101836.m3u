@@ -124,25 +124,26 @@ http://php.jdshipin.com:8880/chudian.php?id=cazh
 
 
 #EXTINF:-1 tvg-id="凤凰中文"  tvg-name="凤凰中文" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzhongwen.png" group-title="港澳台",凤凰卫视中文台
-http://117.27.190.42:9901/tsfile/live/23280_1.m3u8?key=txiptv&playlive=1&authid=0
+http://play-flive.ifeng.com/live/06OLEGEGM4G.m3u8
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzhongwen.png" group-title="港澳台",凤凰卫视中文台
-http://my6.x3322.net:9900/rtp/239.93.0.162:2192
+http://113.64.145.91:8081/hls/37/index.m3u8
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzhongwen.png" group-title="港澳台",凤凰卫视中文台
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV43.m3u8
 
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzixun.png" group-title="港澳台",凤凰卫视资讯台
-http://my6.x3322.net:9900/rtp/239.93.0.118:2191
+http://play-flive.ifeng.com/live/06OLEEWQKN4.m3u8
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzixun.png" group-title="港澳台",凤凰卫视资讯台
-http://117.27.190.42:9901/tsfile/live/23279_1.m3u8?key=txiptv&playlive=1&authid=0
+http://113.64.145.91:8081/hls/36/index.m3u8
 
 
 #EXTINF:-1  tvg-id="HOY资讯" tvg-name="HOY资讯"  tvg-logo="https://live.fanmingming.com/tv/HOY资讯.png" group-title="港澳台",HOY资讯
 https://panel.dattalive.com/8146/8146/playlist.m3u8
 
-#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台"  tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=3
+
 #EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
-http://8.210.207.87/tbs.php?id=r9vuMI4wk1
+http://120.238.13.198:8000/hls/21/index.m3u8
+#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台"  tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
+http://120.84.121.94:808/hls/25/index.m3u8
 #EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
 http://shazui.8866.org:800/hls/80/index.m3u8
 #EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
@@ -160,9 +161,9 @@ http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=5
 #EXTINF:-1  tvg-id="J2" tvg-name="J2"  group-title="港澳台",J2
 http://8.210.207.87/tbs.php?id=KJQLjeRJlt
 #EXTINF:-1 group-title="港澳台",TVB明珠台
-http://61.144.82.98:808/hls/106/index.m3u8
+http://120.238.13.198:8000/hls/19/index.m3u8
 #EXTINF:-1 group-title="港澳台",TVB明珠台
-http://jyjxy.7766.org:8811/hls/37/index.m3u8
+http://120.84.121.94:808/hls/26/index.m3u8
 #EXTINF:-1 group-title="港澳台",TVB星河
 http://180.167.104.105:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="港澳台",TVB星河
@@ -178,7 +179,7 @@ http://182.150.169.110:5555/udp/239.93.0.157:2194
 #EXTINF:-1 group-title="港澳台",香港34台全网
 https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=7
+http://120.84.121.94:808/hls/86/index.m3u8
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
 http://live.cooltv.top/tv/tvb.php?id=0&hq
 #EXTINF:-1 group-title="港澳台",TVB无线新闻台
@@ -193,23 +194,21 @@ http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=14
 #EXTINF:-1 group-title="港澳台",VIUTV6台
 http://8.210.207.87/tbs.php?id=k2pGdZHDip
 #EXTINF:-1 group-title="港澳台",TVBS
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=24
+http://61.158.166.42:1301/haiou.php?key=haiou678&id=tvbs
 #EXTINF:-1 group-title="港澳台",TVBS新闻
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=25
+http://61.158.166.42:1301/haiou.php?key=haiou678&id=tvbsn
 #EXTINF:-1 group-title="港澳台",三立新闻台
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=36
+http://61.158.166.42:1301/haiou.php?key=haiou678&id=Inewstv
 #EXTINF:-1 group-title="港澳台",民视新闻
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=28
+http://61.158.166.42:1301/haiou.php?key=haiou678&id=ftvnewtaiwan
 #EXTINF:-1 group-title="港澳台",中天新闻
-http://livetv.skycf.eu.org/live.m3u8?c=7
+http://61.158.166.42:1301/haiou.php?key=haiou678&id=ctinews
 #EXTINF:-1 group-title="港澳台",台视新闻
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=30
+http://61.158.166.42:1301/haiou.php?key=haiou678&id=ttvnewstwn
 #EXTINF:-1 group-title="港澳台",寰宇新闻
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=32
+http://61.158.166.42:1301/haiou.php?key=haiou678&id=ettvnews
  #EXTINF:-1 group-title="港澳台",东森新闻
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=35
-#EXTINF:-1 group-title="港澳台",非凡新闻台
-http://mywlkj.ddns.net:754/dl/dl668/yximgs.php?id=38
+http://61.158.166.42:1301/haiou.php?key=haiou678&id=feifannewstwn
  
 
  

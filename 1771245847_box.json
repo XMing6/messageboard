@@ -7,12 +7,12 @@
             "key": "豆瓣",
             "name": "豆瓣",
             "type": 3,
-            "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/js/drpy2.min.js",
+            "api": "https://raw.gitmirror.com/gaotianliuyun/gao/master/lib/drpy2.min.js",
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 1,
             "changeable": 0,
-            "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/js/drpy.js"
+            "ext": "https://raw.gitmirror.com/gaotianliuyun/gao/master/js/drpy.js"
         },
         {
             "key": "荐片影视",
@@ -21,27 +21,7 @@
             "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
             "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/荐片.js"
         },
-        {
-            "key": "腾讯视频",
-            "name": "腾讯视频",
-            "type": 3,
-            "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/js/drpy2.min.js",
-            "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/js/qq.js"
-        },
-        {
-            "key": "爱奇艺",
-            "name": "爱奇艺",
-            "type": 3,
-            "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/js/drpy2.min.js",
-            "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/js/iqiyi.js"
-        },
-        {
-            "key": "优酷",
-            "name": "优酷",
-            "type": 3,
-            "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/js/drpy2.min.js",
-            "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/1771245847/TvBox/master/js/youku.js"
-        },
+        
         {
             "key": "Voflix",
             "name": "Voflix",

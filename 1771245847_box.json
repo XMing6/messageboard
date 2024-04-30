@@ -123,7 +123,7 @@
         {
             "key": "索尼资源",
             "name": "索尼资源",
-            "type": 0,
+            "type": 3,
             "api": "https://suoniapi.com/api.php/provide/vod/from/snm3u8/at/xml/",
             "searchable": 1,
             "quickSearch": 1,
@@ -141,7 +141,7 @@
         {
             "key": "ikun资源",
             "name": "ikun资源",
-            "type": 0,
+            "type": 3,
             "api": "https://ikunzyapi.com/api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1,
@@ -182,25 +182,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
-    },
-        {
-            "key": "1080资源",
-            "name": "1080资源",
-            "type": 1,
-            "api": "https://api.1080zyku.com/inc/api_mac10.php",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "速影资源",
-            "name": "速影资源",
-            "type": 1,
-            "api": "https://xn--k5d-suyingtvcom-lc40a84t7o9i3urako0c.suyingok.com/inc/apijson.php",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
+    },  
         {
             "key": "kuaikan",
             "name": "kuaikan",

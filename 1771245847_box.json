@@ -71,51 +71,39 @@
             "api": "csp_Nmvod",
             "playerType": 2,
             "ext": "https://api.cnmcom.com/webcloud/nmapl/anmm.php?url="
-        },  
-        {
-            "key": "乐视资源",
-            "name": "乐视资源",
-            "type": 1,
-            "api": "https://leshizyapi.com/api.php/provide/vod/at/json/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
         },
         {
-            "key": "索尼资源",
-            "name": "索尼资源",
+            "key": "AI1",
+            "name": "AI1┃仅搜索",
             "type": 3,
-            "api": "https://suoniapi.com/api.php/provide/vod/from/snm3u8/at/xml/",
+            "api": "csp_AI",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1
+            "filterable": 0,
+            "playerType": 2,
+            "ext": "http://124.222.116.5/macos/seven/api.php/provide/vod/|okhttp/4.9.1|https://jx.kuaizi.cc"
         },
         {
-            "key": "非凡资源",
-            "name": "非凡资源",
-            "type": 0,
-            "api": "http://cj.ffzyapi.com/api.php/provide/vod/at/xml",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "ikun资源",
-            "name": "ikun资源",
+            "key": "AI2",
+            "name": "AI2┃仅搜索",
             "type": 3,
-            "api": "https://ikunzyapi.com/api.php/provide/vod/at/xml",
+            "api": "csp_AI",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1
+            "filterable": 0,
+            "playerType": 2,
+            "ext": "http://124.222.116.5/mb/api.php/provide/vod/|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.33|qiaoji"
         },
         {
-            "key": "飘零影视",
-            "name": "飘零影视",
-            "type": 1,
-            "api": "https://p2100.net/api.php/provide/vod",
+            "key": "AI3",
+            "name": "AI3┃仅搜索",
+            "type": 3,
+            "api": "csp_AI",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1
+            "filterable": 0,
+            "playerType": 2,
+            "ext": "http://124.222.30.115/mb/api.php/provide/vod/|okhttp/4.9.1|qiaoji"
         },
         {
             "key": "JianPian",

@@ -1,10 +1,10 @@
 #EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml"
 #EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江"  tvg-logo="https://live.fanmingming.com/tv/广东珠江.png"  group-title="大湾区",广东珠江
-http://nas147.myds.me:8888/udp/239.77.0.1:5146
+http://120.238.84.44:9901/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江"  tvg-logo="https://live.fanmingming.com/tv/广东珠江.png"  group-title="大湾区",广东珠江
 http://php.jdshipin.com:8880/chudian.php?id=gdzj
 #EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江"  tvg-logo="https://live.fanmingming.com/tv/广东珠江.png"  group-title="大湾区",广东珠江
-http://61.141.202.118:9901/tsfile/live/0125_3.m3u8?key=txiptv&playlive=0&authid=0
+http://218.13.170.98:9901/tsfile/live/1000_1.m3u8
 #EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江"  tvg-logo="https://live.fanmingming.com/tv/广东珠江.png"  group-title="大湾区",广东珠江
 http://113.86.205.10:8090/hls/105/index.m3u8
 
@@ -141,22 +141,23 @@ http://php.jdshipin.com:8880/chudian.php?id=cazh
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzhongwen.png" group-title="港澳台",凤凰卫视中文台
 http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzhongwen.png" group-title="港澳台",凤凰卫视中文台
-https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV43.m3u8
+https://tv.sd.cn/sichuan?id=239.93.0.162:2192
 
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzixun.png" group-title="港澳台",凤凰卫视资讯台
 http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzixun.png" group-title="港澳台",凤凰卫视资讯台
-http://113.64.145.91:8081/hls/36/index.m3u8
+https://tv.sd.cn/sichuan?id=239.93.0.118:2191
 
 
 #EXTINF:-1  tvg-id="HOY资讯" tvg-name="HOY资讯"  tvg-logo="https://live.fanmingming.com/tv/HOY资讯.png" group-title="港澳台",HOY资讯
 http://bziyunshao.synology.me:8891/bysid/78
 
 #EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
-ttp://php.jdshipin.com/smt.php?id=jade_twn
+http://mzitv.cn:9931/tsfile/live/1007_1.m3u8
+#EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
+Http://php.jdshipin.com/smt.php?id=jade_twn
 #EXTINF:-1  tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="港澳台",翡翠台
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct
-
 
 #EXTINF:-1  tvg-id="VIUTV" tvg-name="VIUTV"  group-title="港澳台",VIUTV
 http://bziyunshao.synology.me:8889/bysid/99
